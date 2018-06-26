@@ -28,7 +28,7 @@ class Stranka
     
     
     public function __toString() {
-        return "stranka: ".$this->id;
+        return "stranka: ".$this->id.",".$this->titulek.",".$this->text;
     }
     
 }
