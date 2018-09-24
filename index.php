@@ -1,10 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
+<?php
+ require_once "php/stranky/Stranka.php";
+ $s = new Stranka();                        
+ $s->setId("textovaci id");
+ $s->setTitulek("testovaci titulek");
+ $s->setText("testovaci text");
+
+ 
+?>
 <html>
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
   <meta name="generator" content="PSPad editor, www.pspad.com">
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <title>prvni stranka</title>
+  <title><?= $s->getTitulek(); ?></title>
   </head>
   <body>
     <article>
@@ -17,8 +26,8 @@
       
       
        <main>
-       <H1>nadpis</H1>
-       text
+       <H1><?= $s->getTitulek(); ?></H1>
+       <?= $s->getText(); ?>
        </main>
     
     

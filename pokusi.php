@@ -1,5 +1,5 @@
-<?php
-require "php/stranky/Stranka.php";
+<?php                               //http://localhost/github/t-web/pokusi.php
+require_once "php/stranky/Stranka.php";
 $s = new Stranka();
 
 
