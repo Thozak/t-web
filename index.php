@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <?php
- require_once "php/stranky/Stranka.php";
- $s = new Stranka();                        
- $s->setId("textovaci id");
- $s->setTitulek("testovaci titulek");
- $s->setText("testovaci text");
-
- 
+ require_once "php/stranky/Stranky.php";
+ $str = new Stranky();                        
+ $s = $str->vyhledejStranku("test id");
 ?>
 <html>
   <head>

@@ -20,7 +20,7 @@ class Stranky                                      //vytvoření class
         $s = new Stranka();                          //vytvoření nové stránky
         $s->setId($id);
         $s->setTitulek("testovaci titulek");
-        $s->setText("testovaci text");
+        $s->setText("testovaci text stranky a id: ".$id);
         
         return $s;
     }
